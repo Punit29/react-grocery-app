@@ -7,21 +7,10 @@ import Total from './components/total';
 
 function App() {
   const [groceries, setgroceries] = useState([
-    {
-      id:1,
-      item : "Bread",
-      units: 12,
-      unitPrice : 10
-    },
-    {
-      id:2,
-      item : "Milk",
-      units: 5,
-      unitPrice : 30
-    }
+    
   ])
   const onAdd = (item,units,unitPrice)=>{
-      const id = Math.floor(Math.random() * 1000000); //on less value check for data
+      const id = item;
       const data = {
         id,item,units,unitPrice
       }
@@ -30,7 +19,7 @@ function App() {
 
   const deleteItem = (id)=>{
     
-      const data  = groceries.filter(x=>x.id!==Number(id))
+      const data  = groceries.filter(x=>x.id!==id)
       setgroceries(data)
   }
 

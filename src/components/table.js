@@ -1,5 +1,5 @@
 import React from "react";
-import Tabledata from "./Tabledata";
+import Tabledata from "./tableData";
 
 export default function Table(props) {
   const { groceries } = props;
@@ -24,7 +24,7 @@ export default function Table(props) {
           </tbody>
         </table>
       ) : (
-        "No data"
+        "Enter items"
       )}
     </div>
   );
