@@ -11,7 +11,7 @@ export default function Table(props) {
             <tr>
               <th>Item Name</th>
               <th>Units</th>
-              <th>Price Per Unit</th>
+              <th>Price</th>
               <th>Total Price</th>
               <th>Action</th>
             </tr>
